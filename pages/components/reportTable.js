@@ -50,6 +50,7 @@ export default function ReportTable(props) {
                     </tr>
                 </tfoot>
             </table>
+            
 
         )
 

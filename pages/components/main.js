@@ -1,5 +1,6 @@
 import React from 'react'
 // import Locations from './locations.js'
+import Footer from './footer.js'
 import hours from './data'
 import ReportTable from './reportTable'
 import { useState } from 'react'
@@ -34,7 +35,7 @@ export default function Main() {
                 <CreateForm data={handler_eve} />
                 <ReportTable locArr={locArr} hours = {hours} />
             </main>
-
+            <Footer len={locArr.length}/>
         </div>
     )
 }
