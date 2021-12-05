@@ -1,7 +1,7 @@
-import Head from './components/head.js'
-import Footer from './components/footer.js'
-import Main from './components/main.js'
-import Header from './components/header.js'
+import Head from '../components/head.js'
+import Footer from '../components/footer.js'
+import Main from '../components/main.js'
+import Header from '../components/header.js'
 
 export default function Home() {
   
