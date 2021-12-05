@@ -1,5 +1,4 @@
 function Locations(props) {
-    console.log(props.x)
     if (props.x.length) {
         return (
             <p>
