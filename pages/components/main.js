@@ -16,12 +16,12 @@ export default function Main() {
             max: event.target.maxCust.value,
             avg: event.target.avg.value,
             location: event.target.location.value,
-            sales: calculateHourlySales(event.target.minCust.value, event.target.maxCust.value, event.target.avg.value)
+            sales: hourlySales(event.target.minCust.value, event.target.maxCust.value, event.target.avg.value)
         }
         setLocArr(x => [...x, my_obj])
 
     }
-    function calculateHourlySales(min, max, avg){
+    function hourlySales(min, max, avg){
         let salesPerh = []
         for(let i = 0 ; i < hours.length ; i++){
             salesPerh[i] = (Math.floor(Math.random() * (parseInt(max) - parseInt(min) + 1) + parseInt(min))) * avg

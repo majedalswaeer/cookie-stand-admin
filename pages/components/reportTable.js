@@ -32,7 +32,7 @@ export default function ReportTable(props) {
                         <tr key={element.id} className=" font-sans odd:bg-green-700 even:bg-green-200" >
                             <td className="font-sans border-b border border-black ">{element.location}</td>
                             {element.sales.map(sale =>
-                                <td className="font-sans border-b border border-black"> {sale}</td>
+                                <td className="font-sans border-b border border-black">{sale}</td>
                             )}
                             <td className="font-sans border-b border border-black">{element.sales.reduce(function (acc, cur) { return acc + cur; }, 0)}</td>
                         </tr>
