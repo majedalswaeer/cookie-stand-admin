@@ -1,4 +1,4 @@
-import Cookiestandadmin from './components/cookiestandadmin.js'
+import Cookiestandadmin from '../components/cookiestandadmin.js'
 
 export default function Home() {
   
